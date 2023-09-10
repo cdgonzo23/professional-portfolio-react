@@ -15,7 +15,7 @@ function Projects() {
           <img src={GitHub} alt='GitHub Logo'/>
           </a>
         </div>
-        <div className='card-body' style={{backgroundImage: `url(${project.src})`}}></div>
+        <div className='card-body' style={{backgroundImage: `url(${project.src})`, backgroundSize: 'cover'}}></div>
       </div>
       ))}
     </div>

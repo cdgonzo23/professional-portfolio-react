@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
 import Projects from './pages/Projects';
@@ -28,7 +27,7 @@ export default function PortfolioContainer() {
     return (
       <>
       <header>
-        <Header />
+        <h1>Christian Gonzales Portfolio</h1>
         <nav className='navbar navbar-expand-lg bg-primary'>
           {/* passing the current page and the page change handler */}
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
