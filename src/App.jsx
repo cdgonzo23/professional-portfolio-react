@@ -1,9 +1,9 @@
-import Container from './components/Container'
+import Pages from './components/PageRender';
 import './App.css'
 
 function App() {
 
-  return <Container />
+  return <Pages />
 }
 
 export default App

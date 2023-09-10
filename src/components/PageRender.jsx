@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import Nav from './Nav'
+import Header from './Header';
+import Nav from './Nav';
+import Footer from './Footer';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -25,12 +27,16 @@ export default function PortfolioContainer() {
   
     return (
       <>
-      <nav>
-        {/* passing the current page and the page change handler */}
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-        {/* function rendering the page */}
-      </nav>
-        <main className="mx-3">{renderPage()}</main>
+      <header>
+        <Header />
+        <nav className='navbar navbar-expand-lg bg-primary'>
+          {/* passing the current page and the page change handler */}
+          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+          {/* function rendering the page */}
+        </nav>
+      </header>
+      <main>{renderPage()}</main>
+      <Footer />
       </>
     );
   }

@@ -1,23 +1,61 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
 
 body {
-  margin: 0;
   display: flex;
-  min-width: 320px;
   min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #f0e7cc;
+}
+
+h2 {
+  margin-top: 8px;
+  color: #b58900;
+}
+
+.navbar {
+  padding: 0;
+  border-radius: 8px;
+}
+
+.container-fluid {
+  width: 50%;
+}
+
+.card {
+  min-height: 250px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 0 0 8px;
+}
+
+a {
+  font-size: larger;
+  color: #f0e7cc;
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 16px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
 }
