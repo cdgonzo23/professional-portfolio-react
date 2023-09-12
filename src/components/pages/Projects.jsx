@@ -8,14 +8,15 @@ function Projects() {
     <h2>Projects</h2>
     <div className='row'>
       {Portfolio.map((project) => (
-      <div className='card bg-primary mb-3 col-md-4 mx-2' key={project.id}>
-        <div className='card-header'>
-          <a href={project.link}>{project.title}</a>
-          <a href={project.github}>
-          <img src={GitHub} alt='GitHub Logo'/>
-          </a>
+      <div className='card mb-3 col-md-4 mx-2' key={project.id}>
+        <div className='card-body' style={{backgroundImage: `url(${project.src})`, aspectRatio: '', backgroundSize: 'cover'}}>
+          <div className='card-links'>
+            <a href={project.link}>{project.title}</a>
+            <a href={project.github}>
+              <img src={GitHub} alt='GitHub Logo'/>
+            </a>
+          </div>
         </div>
-        <div className='card-body' style={{backgroundImage: `url(${project.src})`, backgroundSize: 'cover'}}></div>
       </div>
       ))}
     </div>

@@ -27,15 +27,34 @@ h2 {
 
 .card {
   min-height: 250px;
+  min-width: 250px;
   padding-left: 0%;
   padding-right: 0%;
 }
 
-.card-header {
+.card-body {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  filter: blur(2px);
+}
+
+.card-links {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-body:hover{
+ filter: blur(0);
+}
+
+.card-body:hover .card-links {
+  background-color: #002b36;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0 0 0 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: inset;
 }
 
 a {
