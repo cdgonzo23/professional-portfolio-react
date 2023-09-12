@@ -1,12 +1,7 @@
-
-body {
-  display: flex;
-  min-height: 100vh;
-}
-
 header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -17,12 +12,12 @@ h1 {
 
 h2 {
   margin-top: 8px;
-  color: #b58900;
 }
 
 .navbar {
   padding: 0;
   border-radius: 8px;
+  max-width: fit-content;
 }
 
 .card {
@@ -41,6 +36,7 @@ h2 {
 .card-links {
   display: none;
   transition: all 0.2s ease-in-out;
+  color: black;
 }
 
 .card-body:hover{
@@ -48,7 +44,7 @@ h2 {
 }
 
 .card-body:hover .card-links {
-  background-color: #002b36;
+  background: linear-gradient(#002b36, #f0e7cc);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,9 +54,17 @@ h2 {
 }
 
 a {
-  font-size: larger;
+  font-size: large;
   color: #f0e7cc;
   text-decoration: none;
+}
+
+p {
+  margin-top: 8px;
+}
+
+form {
+  max-width: 50%;
 }
 
 .btn {

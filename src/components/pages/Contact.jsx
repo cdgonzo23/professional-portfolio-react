@@ -5,7 +5,7 @@ function Contact() {
 
   return (
     <>
-    <h2>Contact Me!</h2>
+    <h2>Contact</h2>
     <form onSubmit={handleSubmit}>
         <fieldset>
             <div className="form-group">

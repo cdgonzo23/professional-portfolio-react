@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Projects');
+    const [currentPage, setCurrentPage] = useState('About');
   
     const renderPage = () => {
       if (currentPage === 'Projects') {
@@ -28,13 +28,17 @@ export default function PortfolioContainer() {
       <>
       <header>
         <h1>Christian Gonzales Portfolio</h1>
-        <nav className='navbar navbar-expand-lg bg-primary'>
-          {/* passing the current page and the page change handler */}
-          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-          {/* function rendering the page */}
-        </nav>
       </header>
-      <main>{renderPage()}</main>
+      <nav className='navbar navbar-expand bg-primary'>
+        {/* passing the current page and the page change handler */}
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        {/* function rendering the page */}
+      </nav>
+      <main>
+        <div className='content'>
+          {renderPage()}
+        </div>
+        </main>
       <Footer />
       </>
     );
