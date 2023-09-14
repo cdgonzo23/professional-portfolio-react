@@ -6,7 +6,7 @@ function About() {
     <h2>About</h2>
     <img className='selfie' style={{ width: 125, height: 125 }} src={Selfie} alt="selfie"/>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam quia ullam quasi quae debitis nostrum, labore corrupti temporibus fugiat! Cupiditate eos, earum inventore laudantium nostrum dicta possimus. Autem, ducimus.
+      Full-Stack Web Developer with a high level of competency in Audio Engineering. Trained at Vanderbilt University’s coding boot camp earning a certificate in Full-Stack Web Development. Extremely driven to become a Full-Stack Architect specializing in JavaScript and React while enrolling in professional level certificate classes to continue growing technical expertise.
     </p>
     </>
   )

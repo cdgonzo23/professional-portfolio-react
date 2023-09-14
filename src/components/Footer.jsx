@@ -6,13 +6,13 @@ function Footer() {
   return (
     <footer>
         <a href="https://github.com/cdgonzo23" className="text-light">
-        <img src={GitHub} alt='GitHub Logo'/>
+        <img className='img-link' src={GitHub} alt='GitHub Logo'/>
         </a>
         <a href="https://www.linkedin.com/in/cd-gonzo4223" className="text-light">
-          <img src={LinkedIn} alt='LinkedIn Logo'/>
+          <img className='img-link' src={LinkedIn} alt='LinkedIn Logo'/>
         </a>
         <a style={{marginLeft: 8}} href="https://stackoverflow.com/users/22528990/cd-gonzo" className="text-light">
-        <img src={Stack} alt='Stack OverFlow Logo'/>
+        <img className='img-link' src={Stack} alt='Stack OverFlow Logo'/>
         </a>
     </footer>
   )

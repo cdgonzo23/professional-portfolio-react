@@ -16,11 +16,19 @@ main {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  min-width: 90vw;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .selfie {
   height: 20%;
   width: 20%;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .content {
+    min-width: auto;
+  }
 }

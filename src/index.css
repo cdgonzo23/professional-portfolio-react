@@ -8,6 +8,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   color: #f0e7cc;
+  text-align: center;
 }
 
 h2 {
@@ -20,11 +21,16 @@ h2 {
   max-width: fit-content;
 }
 
+.row {
+  justify-content: center;
+}
+
 .card {
   min-height: 250px;
   min-width: 250px;
   padding-left: 0%;
   padding-right: 0%;
+  margin-top: 16px;
 }
 
 .card-body {
@@ -59,16 +65,42 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 p {
-  margin-top: 8px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.resume-link {
+  margin-top: 24px;
+}
+
+.resume {
+  margin-top: 16px;
 }
 
 form {
-  max-width: 50%;
+  display: flex;
+  align-self: center;
+}
+
+fieldset {
+  min-width: 500px;
 }
 
 .btn {
   margin-top: 16px;
+}
+
+.img-link {
+  transition: all 250ms ease-in-out;
+}
+
+.img-link:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -78,4 +110,15 @@ footer {
   right: 0;
   text-align: center;
   background-color: #002b36;
+}
+
+
+@media (max-width: 600px) {
+  fieldset {
+    min-width: 75vw;
+  }
+  .card {
+    min-height: 250px;
+    min-width: auto;
+  }
 }
