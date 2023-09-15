@@ -6,7 +6,7 @@ function Resume() {
     <h2>Resume</h2>
     <a className='resume-link' href={pdf} download>Download Resume</a>
     <div className='resume'>
-      <h3>Front-End Proficincies</h3>
+      <h3>Front-End Proficiencies</h3>
       <ul>
         <li>JavaScript</li>
         <li>HTML</li>
@@ -16,7 +16,7 @@ function Resume() {
         <li>React</li>
         <li>Bootstrap</li>
       </ul>
-      <h3>Back-End Proficincies</h3>
+      <h3>Back-End Proficiencies</h3>
       <ul>
         <li>APIs</li>
         <li>Node</li>
